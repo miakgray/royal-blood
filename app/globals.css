@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  /* Chrome & ink — dark is the default surface for this console */
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-raised: #221f1f;
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --border: rgba(255, 255, 255, 0.1);
+
+  /* Brand — Royal Blood red, categorical slot 6 (dark step) */
+  --brand: #e66767;
+  --brand-ink: #ffffff;
+
+  /* Status palette — reserved, never reused as a series color */
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --surface-raised: #ffffff;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --border: rgba(11, 11, 11, 0.1);
+
+  --brand: #e34948;
+  --brand-ink: #ffffff;
+
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body {
+  background-color: var(--page);
+  color: var(--text-primary);
+}
+
+body {
+  font-feature-settings: "cv11", "ss01";
+}
