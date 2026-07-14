@@ -6,9 +6,9 @@
   color-scheme: dark;
 
   /* Chrome & ink — dark is the default surface for this console */
-  --page: #0d0d0d;
-  --surface: #1a1a19;
-  --surface-raised: #221f1f;
+  --page: #170808;
+  --surface: #241010;
+  --surface-raised: #2d1414;
   --text-primary: #ffffff;
   --text-secondary: #c3c2b7;
   --text-muted: #898781;
